@@ -10,8 +10,21 @@ To write a Python program that checks if the element `'n'` and the element `8` e
 4. Print the results.
 
 ## 🧾 Program
-Add code here
+~~~
+my_tuple = ('a', 'b', 'n', 4, 8, 'c')
 
+has_n = 'n' in my_tuple
+has_8 = 8 in my_tuple
+
+print(f"Is 'n' present in the tuple? {has_n}")
+print(f"Is 8 present in the tuple? {has_8}")
+~~~
 ## Output
+~~~
+Is 'n' present in the tuple? True
+Is 8 present in the tuple? True
+~~~
+
 
 ## Result
+Thus given program is verified successfully.
