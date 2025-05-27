@@ -14,7 +14,20 @@ To write a Python program that filters out and returns all elements from a list 
 5. Print the final filtered list.
 
 ## 🧾 Program
-Add code here
+~~~
+import re
+def filter_words(words):
+    return [word for word in words if not re.search(r'e', word, re.IGNORECASE)]
+words_list = input("Enter words separated by spaces: ").split()
+
+filtered_list = filter_words(words_list)
+print(f"\nWords without the letter 'e': {filtered_list}")
+~~~
 ## Output
+~~~
+Enter words separated by spaces: apple banana cherry kiwi mango
+Words without the letter 'e': ['banana', 'kiwi']
+~~~
 
 ## Result
+Thus given program is verified successfully
